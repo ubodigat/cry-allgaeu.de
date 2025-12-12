@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cry IT Allgäu – Die nackte Wahrheit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="soundToggle" title="Sound ein / aus">
+        <span id="soundOn">🔊</span>
+        <span id="soundOff" style="display:none;">🔇</span>
+    </div>
+    <canvas id="stars"></canvas>
+    <canvas id="network"></canvas>
+
+    <header class="hero">
+        <div class="brandline">
+            <canvas id="krayCanvas"></canvas>
+
+            <div class="brand-right">
+                <div class="brand-static">IT ALLGÄU</div>
+                <div class="subtitle">
+                    Starke Basis. Starke Website.<br>
+                    <span style="font-size: 0.7em; opacity: 0.6; font-style: italic;">
+                        (Meistens zumindest)
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="hint">Scrollen für die kleine Wahrheit ↓</div>
+    </header>
+
+    <section class="section reveal">
+        <h2 class="h2">Verwechslungsgefahr? Eher eine Warnung.</h2>
+        <p class="p">
+            Dein Lehrer hatte recht: Es ist ein schmaler Grat zwischen <strong>Kray</strong> (Kompetenz?) und <strong>Cry</strong> (Verzweiflung).
+            <br><br> Du suchst eine "Starke Basis"? Hier erfährst du, warum manche Fundamente schneller bröckeln als du "Backup" sagen kannst.
+        </p>
+    </section>
+
+    <section class="section reveal cards">
+
+        <div class="card card-kray">
+            <h3>Das Versprechen</h3>
+            <p style="color: var(--blue); font-weight: bold;">"Starke Basis. Starke Website."</p>
+            <p>✔ Alles High-End.</p>
+            <p>✔ 100% Verfügbarkeit.</p>
+            <p>✔ Der Chef regelt das.</p>
+        </div>
+
+        <div class="card card-cry">
+            <h3>Die Realität</h3>
+            <p style="color: #ff6e6e; font-weight: bold;">"Basis bröckelt. Kunde weint."</p>
+            <p>❌ High-End-Tränen.</p>
+            <p>❌ 100% Verwirrung.</p>
+            <p>❌ "Haben Sie es schon neu gestartet?"</p>
+        </div>
+
+    </section>
+
+    <section class="section bottom" id="bottom">
+        <div class="redirect">
+            <div class="redirect-title">Weiterleitung (Auf eigene Gefahr)</div>
+            <div class="redirect-domain">Ziel: https://kray-allgaeu.de</div>
+            <div class="ring">
+                <svg width="140" height="140" viewBox="0 0 140 140">
+                    <circle cx="70" cy="70" r="62"></circle>
+                    <circle cx="70" cy="70" r="62" id="progress-circle"></circle>
+                </svg>
+                <div class="ring-text" id="counterWrapper" title="Klicken zum Pausieren">
+                    <span id="counter">5.0</span>
+                    <span id="pauseIcon" style="display:none;">⏸</span>
+                </div>
+            </div>
+            <div class="redirect-hint">
+                (Drücke drauf um es abzubrechen)<br> Such dir lieber was Besseres... (Spaß, er kann das, vieleicht 😅)
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="rechtliches.html">Rechtliches · Datenschutz · Satire-Projekt</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
